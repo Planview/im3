@@ -1,0 +1,37 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+  .levels {position: relative;}
+  .levels ul {margin: 0; padding: 0;}
+  .levels ul li {height: 106px; list-style: none; display: block; padding: 5px 200px 5px 96px; overflow: hidden; margin:0; position: relative;}
+  .levels ul dl {margin: 0;}
+  .levels ul dl dt { position: absolute; line-height: 60px; font-size: 40px; color: #999; box-sizing: border-box; width: 64px; height: 64px; text-align: center; margin-top: -32px; margin-left: -32px; left: 48px; top: 53px; border: 2px solid #999; border-radius: 6px;}
+  .levels ul dl dd {display: list-item; list-style-type: disc; margin: 0 20px; padding: 0; line-height: 16px;}
+  .levels .form-group.current, .levels .form-group.desired {position: absolute; top: 0; width: 100px;}
+  .levels .form-group.current {right: 100px;}
+  .levels .form-group.desired {right: 0px;}
+  .levels .form-group.current p, .levels .form-group.desired p {position: absolute; bottom: 100%; width: 100px; left: 0; text-align: center; font-size: 18px; margin: 0;}
+  .level-five {background-color: #eeeef7}
+  .level-four {background-color: #e7e7ee}
+  .level-three {background-color: #dddde7}
+  .level-two {background-color: #d7d7dd}
+  .level-one {background-color: #ccccd7}
+  .my-slider {margin: 53px auto 0; height: 424px;}
+.no-js .js-webapp {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
