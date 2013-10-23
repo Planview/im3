@@ -3,13 +3,25 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Steve Crockett -- Developer
+    Scott Ebner -- Developer
+    Barron Fujimoto -- Designer
+
+    Ryan Doherty
+    Marianne Gorecki
+    Allison Smith
+    Jennifer Witten
+
+    Christa Tuttle
+    Carrie Nauyalis
+    Planview Marketing Team
 
 # THANKS
 
-    <name>
+    
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    jQuery, Modernizr, Underscore, Underscore.string, History.js
+    Bootstrap, jQueryUI, qtip2, jqplot, FancyBox

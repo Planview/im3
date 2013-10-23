@@ -28,11 +28,6 @@ function whatsTheRootUri ()
 
 define('IM3_ROOT_URI', whatsTheRootUri());
 
+include(IM3_ROOT_DIR . 'inc/form.php');
 
-if (!isset($_GET['company']))
-{
-	include(IM3_ROOT_DIR . 'inc/form.php');
-} else {
-	include(IM3_ROOT_DIR . 'inc/results.php');
-}
 
