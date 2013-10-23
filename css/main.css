@@ -34,10 +34,11 @@ fieldset.tab p.directions {margin-bottom: 30px; margin-top: -15px;}
 .green {color: #55a51c;}
 .blue {color: #5183af;}
 .page-header {margin-top: 10px;}
-.plot-container {max-width: 600px; width: 100%; height: 400px; margin: 30px auto 45px;}
+.plot-container {max-width: 600px; width: 100%; margin: 30px auto 45px;}
 .plot-container .plot-inner {max-width: 600px; width: 100%; height: 400px;}
 #submit-button {background-color: #5e189d;}
 #submit-button:hover, #submit-button:active {background-color: #2f0c4c;}
+.js .noscript-message {display: none;}
 
 /* begin SmartForms CSS */
 
@@ -73,6 +74,7 @@ text-align:center;
 .ie8 .tabCompList h3 {padding-top:0px !important;}
 .ie9 .divDisplayFrame {top:130px !important; height:550px !important;}
 .ie9 .tabCompList h3 {padding-top:0px !important;}
+.lt-ie8 .divDisplayFrame {top:850px !important; height:550px !important;}
 html[data-useragent*='MSIE 10.0'] .divDisplayFrame {top:130px !important; height:550px !important;}
 html[data-useragent*='MSIE 10.0'] .tabCompList h3 {padding-top:0px !important;}
 .-moz- .divDisplayFrame {top:160px !important; height:530px !important;}
