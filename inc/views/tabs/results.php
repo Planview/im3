@@ -5,7 +5,7 @@
             <p>Thank you for assessing your maturity using the Innovation Management Maturity Model&trade; developed by Planview&reg;. Below are the findings uncovered for <span class="company-name"></span> when it comes to innovation management maturity along with a comparison to other organizations across the globe as uncovered by the <i>Fourth Product Portfolio Management Benchmark Study</i>.</p>
 
             <h3><span class="company-name"></span>: Your Innovation Management Maturity Level Today</h3>
-            <p>Based on answers about <span class="company-name"></span>&rsquo;s innovation management maturity level across people, process and tools, you rank as shown below.  According to the <i>Fourth Product Portfolio Management Benchmark Study</i>, the median answers of over 700 respondents are noted in the same chart.</p>
+            <p>Based on answers about <span class="company-name"></span>&rsquo;s innovation management maturity level across people, processes and tools, you rank as shown below.  According to the <i>Fourth Product Portfolio Management Benchmark Study</i>, the median answers of over 700 respondents are noted in the same chart.</p>
 
             <figure class="plot-container">
               <div id="industry-chart" class="plot-inner"></div>
@@ -21,7 +21,10 @@
             </figure>
 
             <h3>For More Insight Into These Findings</h3>
-            <p>Read the white paper, <a href="/docs/Planview-Innovation-Maturity-Model.pdf" rel="external" title="A New Framework for Assessing Your Innovation Program"><i>A New Framework for Assessing Your Innovation Program</i></a> to gain additional insights into the model and how it can be applied to your organization as well as more in-depth findings on rankings of companies across the globe when it comes to innovation maturity.</p>
+            <div class="media">
+                <a class="pull-left hidden-xs" href="/docs/Planview-Innovation-Maturity-Model.pdf" rel="external"><img src="<?php echo IM3_ROOT_URI; ?>img/planview-maturity-model-white-paper-208x129.jpg" alt="Planview Maturity Model White Paper" height="129" width="208" title="A New Framework for Assessing Your Innovation Program" class="media-object" /></a>
+                <div class="media-body"><p>Read the white paper, <a href="/docs/Planview-Innovation-Maturity-Model.pdf" rel="external" title="A New Framework for Assessing Your Innovation Program"><i><b>A New Framework for Assessing Your Innovation Program</b></i></a>, to gain additional insights into the model and how it can be applied to your organization as well as more in-depth findings on rankings of companies across the globe when it comes to innovation maturity.</p></div>
+            </div>
 
 <?php   /*
 
@@ -36,7 +39,7 @@
 
             <h4>People</h4>
             <p>This is about having an organizational structure that supports innovation, with people whose jobs are to manage the innovation program and portfolio. The highest maturity organizations have a Center for Process Excellence that is productive, well established, and well-staffed. They also have support from executive leadership and department heads who know that innovation is how the business will grow, meet the corporate strategy, and thrive. Decision-making in the high maturity innovation organization is collaborative and efficient. Everyone throughout the commercialization process understands their role and their part in delivering against the objectives of innovation. Highly trained project managers and scrum masters lead innovation and development teams, leveraging industry best practices to meet deliverable and product launch target.</p>
-            <h4>Process</h4>
+            <h4>Processes</h4>
             <p>This refers to the automation of the commercialization process. Organizations at the highest maturity level have dynamic processes that can easily be adapted as the market changes and the company evolves. They have fully automated and standardized processes that are in a regular state of continuous improvement, including process deliverables, templates, and reports. Portfolio metrics have evolved to include resource capacity, competitive impact, and environmental impact scores. Projects are killed early and often during portfolio reviews.</p>
             <h4>Tools</h4>
             <p>This refers to having a Product Portfolio Management (PPM) system in place to automate processes, which are rolled out to everyone along the commercialization process. The <abbr title="Product Portfolio Management">PPM</abbr> application is integrated with other enterprise applications, such as the <abbr title="Enterprise Resourse Planning">ERP</abbr> and the <abbr title="Product Lifecycle Management">PLM</abbr>. Ideas are collected via purpose-built, externally available applications for customer and company-wide collaboration. The product roadmap is tied to corporate strategy and project execution via the <abbr title="Product Portfolio Management">PPM</abbr> application. What-if analysis is performed against resource capacity to consistently hit launch windows. The entire product catalog of in-market products, including the product <abbr title="Profit and Loss">P&amp;L</abbr>, is managed via the <abbr title="Product Portfolio Management">PPM</abbr> application to leverage platform components across multiple products. Self-service, configurable reports and metrics are delivered across the organization to those who need access, in a format and device that works best for each individual user.</p>
