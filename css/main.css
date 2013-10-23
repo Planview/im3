@@ -74,6 +74,7 @@ text-align:center;
 .ie8 .tabCompList h3 {padding-top:0px !important;}
 .ie9 .divDisplayFrame {top:130px !important; height:550px !important;}
 .ie9 .tabCompList h3 {padding-top:0px !important;}
+.lt-ie8 .divDisplayFrame {top:850px !important; height:550px !important;}
 html[data-useragent*='MSIE 10.0'] .divDisplayFrame {top:130px !important; height:550px !important;}
 html[data-useragent*='MSIE 10.0'] .tabCompList h3 {padding-top:0px !important;}
 .-moz- .divDisplayFrame {top:160px !important; height:530px !important;}
