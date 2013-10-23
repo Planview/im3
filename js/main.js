@@ -1,5 +1,8 @@
+/*global _, $, History, sf$, sfjq$, sfcc$, Adapter */
+/*jslint nomen: true, browser: true */
 
-var theIM3WebApp = {
+var theIM3WebApp;
+theIM3WebApp = {
     options: {
         formSubmitted: false,
         //  A simple storage of the tabs that we have
@@ -123,7 +126,7 @@ var theIM3WebApp = {
         it: 2,
         icoa: 3,
         ifoa: 4,
-        company: "Your Organization",
+        company: null,
         industry: null
     },
     init: function () { //  This is where I call everything to get started
@@ -157,18 +160,24 @@ var theIM3WebApp = {
         History.Adapter.bind(window, 'statechange', backForwardListener);
         History.Adapter.bind(window, 'hashchange', backForwardListener);
         $(".info-button").fancybox({
-            maxWidth    : 800,
-            maxHeight   : 600,
-            fitToView   : false,
-            width       : '70%',
-            autoSize    : false,
-            closeClick  : false,
-            openEffect  : 'none',
-            closeEffect : 'none'
+            maxWidth: 800,
+            maxHeight: 600,
+            fitToView: false,
+            width: '70%',
+            autoSize: false,
+            closeClick: false,
+            openEffect: 'none',
+            closeEffect: 'none'
         });
-        $('#permalink').on('focus', function () {this.select(); });
-        $('#permalink').on('click', function () {this.select(); });
-        $('a[rel*="external"]').on('click', function (e) {e.preventDefault(); window.open($(this).attr('href')); });
+        $('#permalink').on('focus',function () {
+            this.select();
+        }).on('click', function () {
+            this.select();
+        });
+        $('a[rel*="external"]').on('click', function (e) {
+            e.preventDefault();
+            window.open($(this).attr('href'));
+        });
     },
     buildTheTabs: function () {
         'use strict';
@@ -199,11 +208,11 @@ var theIM3WebApp = {
             this.showTab(0);
         } else if (pageURL[1].match(/WT\.mc_id/)) {
             if ($('#Tactic__c').length) { //if exists
-                this.setTacticCode('WT.mc_id','Tactic__c');
+                this.setTacticCode('WT.mc_id', 'Tactic__c');
             }
             //-- set tactic code raw value in Manticore forms
             if ($('#Tactic_Code__c').length) { //if exists
-                this.setTacticCodeRaw('WT.mc_id','Tactic_Code__c');
+                this.setTacticCodeRaw('WT.mc_id', 'Tactic_Code__c');
             }
             this.showTab(0);
         } else {
@@ -427,8 +436,10 @@ var theIM3WebApp = {
     },
     formListener: function (event) {
         'use strict';
-        var returnUrlString;
+        var returnUrlString, companyValue;
         event.preventDefault();
+
+        companyValue = $('#Company').val();
 
         returnUrlString = History.getState().url;
         returnUrlString = returnUrlString.split('?');
@@ -436,9 +447,9 @@ var theIM3WebApp = {
         returnUrlString[1][0] = "6";
         returnUrlString[1] = returnUrlString[1].join('/');
         returnUrlString = returnUrlString.join('?');
-        if ($('#Company').val() || this.dataStore.company) {
-            returnUrlString += encodeURIComponent($('#Company').val()) + '/';
-            this.dataStore.company = $('#Company').val();
+        if (companyValue || this.dataStore.company !== "Your Organization") {
+            returnUrlString += encodeURIComponent(companyValue) + '/';
+            this.dataStore.company = companyValue;
         }
         $('#Redirect').val(returnUrlString);
         $('#permalink').val(returnUrlString);
@@ -452,6 +463,7 @@ var theIM3WebApp = {
         }
 
         this.ajaxCall();
+        return true;
         // End SmartForms code
 
     },
@@ -588,7 +600,15 @@ var theIM3WebApp = {
                     yaxis: {
                         tickOptions: {showMark: false},
                         pad: 1.5,
-                        ticks: [[0, '0'], [1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5'], [5.5, '']]
+                        ticks: [
+                            [0, '0'],
+                            [1, '1'],
+                            [2, '2'],
+                            [3, '3'],
+                            [4, '4'],
+                            [5, '5'],
+                            [5.5, '']
+                        ]
                     }
                 }
             });
@@ -626,7 +646,7 @@ var theIM3WebApp = {
             this.showTab(0, true);
         } else {
             theURIData = _.words(pageURL[1], '/');
-            if ((currentTabIndex * 1) !== (theURIData[0] * 1)) {
+            if (currentTabIndex != theURIData[0]) {
                 this.hideTab(currentTabIndex);
                 this.showTab(theURIData[0], true);
                 History.replaceState(null, this.options.tabs[theURIData[0]].title, this.urlBuilder(theURIData[0]));
@@ -637,6 +657,7 @@ var theIM3WebApp = {
         'use strict';
         var context = this;
 
+        //noinspection JSUndeclaredVariable
         sfcc$ = {};
         sfcc$.doAppend = true;
 
@@ -649,7 +670,7 @@ var theIM3WebApp = {
     },
     ajaxCall: function () {
         'use strict';
-        var form, context, message;
+        var form, context, message, companyValue;
 
         context = this;
 
@@ -661,9 +682,10 @@ var theIM3WebApp = {
             url: form.attr('action'),
             data: form.serialize(),
             beforeSend: function () {
-                context.dataStore.company = $('#Company').val();
-                $('.company-name').text($('#Company').val());
-                $('#contact-inputs').hide().wrap('<div id="error-container" />');
+                companyValue = $('#Company').val();
+                context.dataStore.company = companyValue;
+                $('.company-name').text(companyValue);
+                $('#contact-inputs').hide().wrap('<div id="error-container"></div>');
                 message.addClass('alert-info').html('<strong>Thank You!</strong>'
                     + '<br/>Please wait while we process your form submission.');
                 $('#error-container').prepend(message);
@@ -688,30 +710,31 @@ var theIM3WebApp = {
             }
         });
     },
-    setTacticCode: function (queryVariableName,tacticCodeElementID) {
+    setTacticCode: function (queryVariableName, tacticCodeElementID) {
         'use strict';
         var queryVariableValue, numberOfTacticCodeDigits, queryVariableValueNumber, e;
 
         queryVariableValue = this.getQueryVariableValue(queryVariableName);
-        if(queryVariableValue) {
+        if (queryVariableValue) {
             numberOfTacticCodeDigits = 3;
             if (queryVariableValue.length === 10) { //00-99
                 numberOfTacticCodeDigits = 2;
-            }       
-            queryVariableValueNumber = queryVariableValue.substr((queryVariableValue.length - numberOfTacticCodeDigits),numberOfTacticCodeDigits);
-            if (!isNaN(queryVariableValueNumber)) { //if the last digits of the code are numbers, use the tacticCodes array value
-                queryVariableValue = tacticCodes[Number(queryVariableValueNumber)]; 
+            }
+            queryVariableValueNumber = queryVariableValue
+                .substr((queryVariableValue.length - numberOfTacticCodeDigits), numberOfTacticCodeDigits);
+            if (!isNaN(queryVariableValueNumber)) { //if the last digits are numbers, use the tacticCodes array value
+                queryVariableValue = tacticCodes[Number(queryVariableValueNumber)];
             }
             e = document.getElementById(tacticCodeElementID);
             e.value = queryVariableValue;
         }
     },
-    setTacticCodeRaw: function (queryVariableName,tacticCodeElementID) {
+    setTacticCodeRaw: function (queryVariableName, tacticCodeElementID) {
         'use strict';
         var queryVariableValue, e;
 
         queryVariableValue = this.getQueryVariableValue(queryVariableName);
-        if(queryVariableValue) {
+        if (queryVariableValue) {
             e = document.getElementById(tacticCodeElementID);
             e.value = queryVariableValue;
         }
@@ -720,22 +743,21 @@ var theIM3WebApp = {
         'use strict';
         var query, queryResults, pair, i, ii;
 
-        query = window.location.search.substring(1); 
-        queryResults = query.split("&"); 
-        for (i = 0, ii = queryResults.length; i < ii; i += 1) { 
-            pair = queryResults[i].split("="); 
-            if (pair[0] === variableName) { 
-                return pair[1]; 
+        query = window.location.search.substring(1);
+        queryResults = query.split("&");
+        for (i = 0, ii = queryResults.length; i < ii; i += 1) {
+            pair = queryResults[i].split("=");
+            if (pair[0] === variableName) {
+                return pair[1];
             }
         }
+        return false;
     }
 };
 
 $(document).ready(theIM3WebApp.init());
 
 /*
-# TODO List:
-2. Add no-JS message
-// 8. Add PDF rendering
-// 9. Add comments and JSDoc notes
+TODO Add PDF rendering
+TODO Add comments and JSDoc notes
 */

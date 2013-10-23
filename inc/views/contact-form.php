@@ -9,7 +9,6 @@
                     <input id="MTC_SERVER" type="hidden" value="stats.manticoretechnology.com" name="MTC_SERVER" />
                     <input id="ProspectPageID" type="hidden" value="28006" name="ProspectPageID" />
                     <input id="SendToCRM" type="hidden" value="true" name="SendToCRM" />
-                    <input id="ListID" type="hidden" name="ListID" value="12463" />
                     <input id="Tactic__c" name="Tactic__c" type="hidden" value="Web" />
                     <input id="Tactic_Code__c" name="Tactic_Code__c" type="hidden" value="328OT00100" />
                     <input id="Market__c" name="Market__c" type="hidden" value="PD" />
