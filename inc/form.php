@@ -49,6 +49,17 @@ include(IM3_ROOT_DIR . "inc/views/header.php");
           </nav>
       	</form>
       </div>
+      <div class="row noscript-message">
+          <div class="col-md-12">
+              <div class="page-header">
+                  <h1>
+                      <span class="blue">Introducing the Innovation Management Maturity Model&trade;</span><br />
+                      <small>Brought to you by Planview&reg;</small>
+                  </h1>
+              </div>
+              <p class="lead">We&rsquo;re sorry, this Web application requires Javascript enabled in your browser to function. If you would like to continue, please enable Javascript and refresh the page.</p>
+          </div>
+      </div>
 
 <?php 
   include(IM3_ROOT_DIR . 'inc/views/fancybox-lists.php');

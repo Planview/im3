@@ -1,4 +1,5 @@
-/*global _, $, History, sf$, sfjq$, sfcc$ */
+/*global _, $, History, sf$, sfjq$, sfcc$, Adapter */
+/*jslint nomen: true, browser: true */
 
 var theIM3WebApp;
 theIM3WebApp = {
@@ -125,7 +126,7 @@ theIM3WebApp = {
         it: 2,
         icoa: 3,
         ifoa: 4,
-        company: "Your Organization",
+        company: null,
         industry: null
     },
     init: function () { //  This is where I call everything to get started
@@ -757,8 +758,6 @@ theIM3WebApp = {
 $(document).ready(theIM3WebApp.init());
 
 /*
-# TODO List:
-2. Add no-JS message
-// 8. Add PDF rendering
-// 9. Add comments and JSDoc notes
+TODO Add PDF rendering
+TODO Add comments and JSDoc notes
 */

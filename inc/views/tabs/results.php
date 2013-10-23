@@ -58,4 +58,4 @@
 
 
             <h4 style="margin-top: 50px;">To come back to your results visit:</h4>
-            <input type="text" readonly="readonly" id="permalink" class="form-control" style="cursor: pointer;" />
+            <input type="text" readonly="readonly" id="permalink" class="form-control" style="cursor: text;" />
