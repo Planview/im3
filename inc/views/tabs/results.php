@@ -1,7 +1,9 @@
             <div class="page-header">
               <h2><span class="blue">The Innovation Management Maturity Level for <span class="company-name"></span></span></h2>
             </div>
-            
+
+            <button id="pdf-button" class="btn btn-lg btn-info">Save This Report as a PDF</button>
+
             <p>Thank you for assessing your maturity using the Innovation Management Maturity Model&trade; developed by Planview&reg;. Below are the findings uncovered for <span class="company-name"></span> when it comes to innovation management maturity along with a comparison to other organizations across the globe as uncovered by the <i>Fourth Product Portfolio Management Benchmark Study</i>.</p>
 
             <h3><span class="company-name"></span>: Your Innovation Management Maturity Level Today</h3>

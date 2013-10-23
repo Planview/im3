@@ -133,12 +133,14 @@ theIM3WebApp = {
         var navListener,
             formListener,
             resizeListener,
-            backForwardListener;
+            backForwardListener,
+            pdfListener;
 
         navListener = $.proxy(this.navListener, this);
         formListener = $.proxy(this.formListener, this);
         resizeListener = $.proxy(this.resizeListener, this);
         backForwardListener = $.proxy(this.backForwardListener, this);
+        pdfListener = $.proxy(this.writeThePdf, this);
 
         _.mixin(_.str.exports());
         _.mixin({
@@ -177,6 +179,7 @@ theIM3WebApp = {
             e.preventDefault();
             window.open($(this).attr('href'));
         });
+        $('#pdf-button').on('click', pdfListener);
     },
     buildTheTabs: function () {
         'use strict';
@@ -751,6 +754,18 @@ theIM3WebApp = {
             }
         }
         return false;
+    },
+    writeThePdf: function () {
+        'use strict';
+        var newDocument;
+
+        newDocument = new jsPDF();
+        if (_.isString(this.dataStore.companyName)) {
+            newDocument.text(20, 20, this.dataStore.company);
+        } else {
+            newDocument.text(20, 20, $('.company-name').first().text());
+        }
+        newDocument.save('im3-test.pdf');
     }
 };
 

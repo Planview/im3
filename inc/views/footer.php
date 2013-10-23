@@ -24,6 +24,9 @@
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jquery.qtip.js"></script>
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jquery.history.js"></script>
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jquery.fancybox.pack.js?v=2.1.5"></script>
+          <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jspdf/jspdf.js"></script>
+          <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jspdf/libs/Blob.js/BlobBuilder.js"></script>
+          <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jspdf/libs/FileSaver.js/FileSaver.js"></script>
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/main.js"></script>
     </body>
