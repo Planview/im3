@@ -205,7 +205,7 @@ theIM3WebApp = {
         //  If there's no additional URL string, start from the beginning
         if (!pageURL[1]) {
             //  Go to the beginning
-            this.showTab(0);
+            this.showTab(0, "replace");
         } else if (pageURL[1].match(/WT\.mc_id/)) {
             if ($('#Tactic__c').length) { //if exists
                 this.setTacticCode('WT.mc_id', 'Tactic__c');
@@ -214,7 +214,7 @@ theIM3WebApp = {
             if ($('#Tactic_Code__c').length) { //if exists
                 this.setTacticCodeRaw('WT.mc_id', 'Tactic_Code__c');
             }
-            this.showTab(0);
+            this.showTab(0, "replace");
         } else {
             //  Else if there's a URL string, check that it's valid
             theURIData = _.words(pageURL[1], '/');
@@ -250,7 +250,7 @@ theIM3WebApp = {
                 }
             }
 
-            this.showTab(theURIData[0]);
+            this.showTab(theURIData[0], "replace");
             if (theURIData[0] === "6") {
                 returnUrlString = History.getState().url;
                 $('#permalink').val(returnUrlString);
@@ -321,6 +321,9 @@ theIM3WebApp = {
         //  Update the URL
         if (!noStateChange) {
             History.pushState(null, this.options.tabs[tabIndex].title, this.urlBuilder(tabIndex));
+        }
+        if (noStateChange === "replace") {
+            History.replaceState(null, this.options.tabs[tabIndex].title, this.urlBuilder(tabIndex));
         }
     },
     nextTab: function () {
