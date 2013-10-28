@@ -1,4 +1,4 @@
-/*global _, $, History, sf$, sfjq$, sfcc$, Adapter */
+/*global _, $, History, sf$, sfjq$, sfcc$, Adapter, ga */
 /*jslint nomen: true, browser: true */
 
 var theIM3WebApp;
@@ -321,6 +321,7 @@ theIM3WebApp = {
         //  Update the URL
         if (!noStateChange) {
             History.pushState(null, this.options.tabs[tabIndex].title, this.urlBuilder(tabIndex));
+            ga('send','pageview');
         }
         if (noStateChange === "replace") {
             History.replaceState(null, this.options.tabs[tabIndex].title, this.urlBuilder(tabIndex));

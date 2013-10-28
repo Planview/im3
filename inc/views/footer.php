@@ -25,6 +25,17 @@
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jquery.history.js"></script>
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jquery.fancybox.pack.js?v=2.1.5"></script>
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/bootstrap.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-16646450-1');ga('send','pageview');
+        </script>
+
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/main.js"></script>
     </body>
 </html>
