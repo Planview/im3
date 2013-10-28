@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8" />
         <!--[if IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-        <title>Innovation Management Maturity Model Mapping Model Making Many Men Miserable Misers</title>
+        <title>Introducing the Innovation Management Maturity Model&trade; Brought to You by Planview&reg;</title>
         <meta name="description" content="The Innovation Management Maturity Model gives organizations a critical tool for assessing the strength of their innovation program." />
         <meta name="viewport" content="width=device-width" />
         <link type="text/plain" rel="author" href="<?php echo IM3_ROOT_URI; ?>humans.txt" />
