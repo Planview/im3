@@ -1,4 +1,4 @@
-/*global _, $, History, sf$, sfjq$, sfcc$, Adapter */
+/*global _, $, History, sf$, sfjq$, sfcc$, Adapter, ga */
 /*jslint nomen: true, browser: true */
 
 var theIM3WebApp;
@@ -279,6 +279,7 @@ theIM3WebApp = {
         'use strict';
         var theTab = $('#' + this.options.tabs[tabIndex].id),
             theTabData = this.options.tabs[tabIndex],
+            newUrl,
             i;
 
         theTab.show().addClass('current-tab')
@@ -318,12 +319,16 @@ theIM3WebApp = {
 
         $(document).scrollTop(0);
 
+        newUrl = this.urlBuilder(tabIndex);
+
         //  Update the URL
         if (!noStateChange) {
-            History.pushState(null, this.options.tabs[tabIndex].title, this.urlBuilder(tabIndex));
+            History.pushState(null, this.options.tabs[tabIndex].title, newUrl);
+            ga('send','pageview', window.location.pathname + newUrl);
+            dcsMultiTrack('DCS.dcsuri', window.location.pathname + newUrl);
         }
         if (noStateChange === "replace") {
-            History.replaceState(null, this.options.tabs[tabIndex].title, this.urlBuilder(tabIndex));
+            History.replaceState(null, this.options.tabs[tabIndex].title, newUrl);
         }
     },
     nextTab: function () {
