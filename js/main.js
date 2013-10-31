@@ -325,7 +325,6 @@ theIM3WebApp = {
         if (!noStateChange) {
             History.pushState(null, this.options.tabs[tabIndex].title, newUrl);
             ga('send','pageview', window.location.pathname + newUrl);
-            dcsMultiTrack('DCS.dcsuri', window.location.pathname + newUrl);
         }
         if (noStateChange === "replace") {
             History.replaceState(null, this.options.tabs[tabIndex].title, newUrl);
