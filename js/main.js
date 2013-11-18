@@ -324,7 +324,7 @@ theIM3WebApp = {
         //  Update the URL
         if (!noStateChange) {
             History.pushState(null, this.options.tabs[tabIndex].title, newUrl);
-            _gaq.push(['_trackPageview', window.location.pathname + newUrl]);
+            ga('send', 'pageview', window.location.pathname + newUrl);
         }
         if (noStateChange === "replace") {
             History.replaceState(null, this.options.tabs[tabIndex].title, newUrl);
