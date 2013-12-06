@@ -91,7 +91,17 @@ html[data-useragent*='MSIE 10.0'] .tabCompList h3 {padding-top:0px !important;}
   .info-button-text {display: none;}
 }
 
+.intro-ctas a {
+	min-height: 160px;
+}
 
-
-
-
+@media screen and (max-width: 1200px) {
+  .intro-ctas a {min-height: 168px;}
+}
+@media screen and (max-width: 992px) {
+  .intro-ctas a {min-height: 214px;}
+}
+@media screen and (max-width: 768px) {
+  .intro-ctas a {min-height: 0;}
+  .intro-ctas a:first-child {margin-bottom: 10px;}
+}
