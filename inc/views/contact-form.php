@@ -505,5 +505,5 @@
             </div>
 
 
-            <input class="submit-button btn btn-info btn-block btn-lg" id="submit-button" type="submit" value="Go Now!" />
+            <input class="submit-button btn btn-info btn-block btn-lg" id="submit-button" type="submit" value="Compare Now!" />
             </fieldset>
