@@ -1,6 +1,9 @@
 
-          <fieldset id="contact-inputs" class="col-sm-4">
-          <img src="<?php echo IM3_ROOT_URI; ?>img/see-how-you-compare-600x143.jpg" width="600" height="143" alt="See How You Compare" style="width: 100%; height: auto; margin-bottom: 10px;" />
+          <fieldset id="contact-inputs" class="col-md-4 well" style="margin-top: 24px;">
+          <div style="margin: -20px -20px 0;">
+          <img src="<?php echo IM3_ROOT_URI; ?>img/see-how-you-compare-600x143.png" width="600" height="143" alt="See How You Compare" style="width: 100%; height: auto; margin-bottom: 10px;" />
+
+          </div>
 
                     <input id="MTC_KEY" type="hidden" value="EF30EA63-C343-4934-A65D-B00368852CB1" name="MTC_KEY" />
                     <input id="MTC_ID" type="hidden" value="6938" name="MTC_ID" />
@@ -502,5 +505,5 @@
             </div>
 
 
-            <input class="submit-button btn btn-info btn-block btn-lg" id="submit-button" type="submit" value="Go Now!" />
+            <input class="submit-button btn btn-info btn-block btn-lg" id="submit-button" type="submit" value="Compare Now!" />
             </fieldset>

@@ -3,11 +3,10 @@
             <p>&copy; <?php echo date('Y'); ?> Planview, Inc., All Rights Reserved.</p>
           </footer>
         </div> <!-- /container -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-
-        <script type="text/javascript">var sfjq$ = jQuery.noConflict(true); var sf$, sfcc$;</script>
-
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+        <script type="text/javascript">var sfjq$ = jQuery; var sf$, sfcc$;</script>
+
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/webshims/polyfiller.js"></script>
         <!--[if lt IE 9]><script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jqplot/excanvas.js"></script><![endif]-->
         <script type="text/javascript" src="http://www.reachforce.com/smartforms/v3-0/SmartForms.js"></script>
