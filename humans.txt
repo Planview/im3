@@ -6,10 +6,10 @@
     Steve Crockett -- Developer
     Scott Ebner -- Developer
     Barron Fujimoto -- Designer
-
+    Allison Smith -- Designer
+    
     Ryan Doherty
     Marianne Gorecki
-    Allison Smith
     Jennifer Witten
 
     Christa Tuttle
