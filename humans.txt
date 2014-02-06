@@ -6,7 +6,7 @@
     Steve Crockett -- Developer
     Scott Ebner -- Developer
     Barron Fujimoto -- Designer
-    Allison Smith -- Designer
+    Allison L. Smith -- Designer
     
     Ryan Doherty
     Marianne Gorecki
