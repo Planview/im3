@@ -198,26 +198,25 @@ theIM3WebApp = {
     },
     checkTheURL: function () {
         'use strict';
-        var pageURL, theURIData, peopleData, processData, toolsData, overallData, returnUrlString;
+        var pageURL, queryString, im3Data, theURIData, peopleData, processData, toolsData, overallData, returnUrlString;
         //  On page-load, we need to check the URL to know what state to load
         pageURL = History.getState().url;
         pageURL = _.words(pageURL, '?');
+
+        queryString = pageURL[1];
+
+        im3Data = _.words(queryString, '&');
+        im3Data = im3Data[0];
+
         //  If there's no additional URL string, start from the beginning
-        if (!pageURL[1]) {
+        if (!queryString) {
             //  Go to the beginning
             this.showTab(0, "replace");
-        } else if (pageURL[1].match(/WT\.mc_id/)) {
-            if ($('#Tactic__c').length) { //if exists
-                this.setTacticCode('WT.mc_id', 'Tactic__c');
-            }
-            //-- set tactic code raw value in Manticore forms
-            if ($('#Tactic_Code__c').length) { //if exists
-                this.setTacticCodeRaw('WT.mc_id', 'Tactic_Code__c');
-            }
+        } else if ( !queryString.match(/^[0-9]/)) {
             this.showTab(0, "replace");
         } else {
             //  Else if there's a URL string, check that it's valid
-            theURIData = _.words(pageURL[1], '/');
+            theURIData = _.words(im3Data, '/');
             if (theURIData.length > 1) {
                 peopleData = _.words(theURIData[1], '-');
                 this.dataStore.IMMM_People_Current__c = peopleData[0];
