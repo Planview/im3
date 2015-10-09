@@ -3,10 +3,11 @@
             <p>&copy; <?php echo date('Y'); ?> Planview, Inc., All Rights Reserved.</p>
           </footer>
         </div> <!-- /container -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+        <script type="text/javascript">var sfjq$ = jQuery.noConflict(true); var sf$, sfcc$;</script>
+
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-        <script type="text/javascript">var sfjq$ = jQuery; var sf$, sfcc$;</script>
-
         <script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/webshims/polyfiller.js"></script>
         <!--[if lt IE 9]><script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/vendor/jqplot/excanvas.js"></script><![endif]-->
         <script type="text/javascript" src="http://www.reachforce.com/smartforms/v3-0/SmartForms.js"></script>
@@ -33,6 +34,11 @@
                 e.src='//www.google-analytics.com/analytics.js';
                 r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-16646450-3');ga('send','pageview');
+            // second tracking code
+            ga('create', 'UA-16646450-1', 'auto', {'name': 'newTracker', 'allowLinker': true}); 
+            ga('newTracker.require', 'linker'); 
+            ga('newTracker.linker:autoLink', ['www.planview.com', 'www.planview.de', 'www.planview.fr'] ); 
+            ga('newTracker.send', 'pageview');
         </script>
 
           <!-- START OF SmartSource Data Collector TAG v10.2.29 -->

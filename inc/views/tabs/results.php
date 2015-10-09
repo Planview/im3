@@ -22,8 +22,8 @@
 
             <h3>For More Insight Into These Findings</h3>
             <div class="media">
-                <a class="pull-left hidden-xs" href="/docs/Planview-Innovation-Maturity-Model.pdf" rel="external"><img src="<?php echo IM3_ROOT_URI; ?>img/planview-maturity-model-white-paper-208x129.jpg" alt="Planview Maturity Model White Paper" height="129" width="208" title="A New Framework for Assessing Your Innovation Program" class="media-object" /></a>
-                <div class="media-body"><p>Read the white paper, <a href="/docs/Planview-Innovation-Maturity-Model.pdf" rel="external" title="A New Framework for Assessing Your Innovation Program"><i><b>A New Framework for Assessing Your Innovation Program</b></i></a>, to gain additional insights into the model and how it can be applied to your organization as well as more in-depth findings on rankings of companies across the globe when it comes to innovation maturity.</p></div>
+                <a class="pull-left hidden-xs" href="/im3/docs/Planview-Innovation-Maturity-Model.pdf" rel="external"><img src="<?php echo IM3_ROOT_URI; ?>img/planview-maturity-model-white-paper-208x129.jpg" alt="Planview Maturity Model White Paper" height="129" width="208" title="A New Framework for Assessing Your Innovation Program" class="media-object" /></a>
+                <div class="media-body"><p>Read the white paper, <a href="/im3/docs/Planview-Innovation-Maturity-Model.pdf" rel="external" title="A New Framework for Assessing Your Innovation Program"><i><b>A New Framework for Assessing Your Innovation Program</b></i></a>, to gain additional insights into the model and how it can be applied to your organization as well as more in-depth findings on rankings of companies across the globe when it comes to innovation maturity.</p></div>
             </div>
 
 <?php   /*
@@ -48,7 +48,7 @@
             <div class="well">
               <h3><span class="green">Suggested Next Steps</span></h3>
               <ol>
-                <li>Share the <a href="/docs/Planview-Innovation-Management-Maturity-Model.pdf" rel="external" title="Innovation Management Maturity Model Snapshot">Innovation Management Maturity Model</a> with your peers</li>
+                <li>Share the <a href="/im3/docs/Planview-Innovation-Management-Maturity-Model.pdf" rel="external" title="Innovation Management Maturity Model Snapshot">Innovation Management Maturity Model</a> with your peers</li>
                 <li>Discuss how the product development team and leadership perceives the company to be ranked today and where the company wants to get to when it comes to innovation</li>
               </ol>
             </div>
