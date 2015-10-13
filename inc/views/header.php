@@ -33,7 +33,13 @@
             b.setAttribute('data-useragent',  navigator.userAgent);
             b.setAttribute('data-platform', navigator.platform );
         </script>
-
+<!-- SmartForms Config BEGIN -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript">var sfjq$ = jQuery.noConflict(true); var sf$, sfcc$;</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="//d12ulf131zb0yj.cloudfront.net/SmartForms3-0/SmartForms.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/smartforms-config.js"></script>
+<!-- SmartForms Config END -->
 
     </head>
     <body>

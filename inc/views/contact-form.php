@@ -4,120 +4,147 @@
           <img src="<?php echo IM3_ROOT_URI; ?>img/see-how-you-compare-600x143.png" width="600" height="143" alt="See How You Compare" style="width: 100%; height: auto; margin-bottom: 10px;" />
 
           </div>
+<!-- Marketo fields -->
+<input type="hidden" id="Product_Line_PV__c" name="Product_Line_PV__c" value="true" />
+<input type="hidden" id="tactic__c" name="tactic__c" value="web" />
+<!-- begin SmartForms fields -->
+<input type="hidden" id="Confidence_Level__c" name="Confidence_Level__c" value="" />
+<input type="hidden" id="Matched_Company_Name__c" name="Matched_Company_Name__c" value="" />
+<input type="hidden" id="Matched_Address1__c" name="Matched_Address1__c" value="" />
+<input type="hidden" id="Matched_Address2__c" name="Matched_Address2__c" value="" />
+<input type="hidden" id="Matched_City__c" name="Matched_City__c" value="" />
+<input type="hidden" id="Matched_State__c" name="Matched_State__c" value="" />
+<input type="hidden" id="Matched_Zip__c" name="Matched_Zip__c" value="" />
+<input type="hidden" id="Matched_Country__c" name="Matched_Country__c" value="" />
+<input type="hidden" id="Matched_Phone__c" name="Matched_Phone__c" value="" />
+<input type="hidden" id="Matched_Trade_Name__c" name="Matched_Trade_Name__c" value="" />
+<input type="hidden" id="Matched_State_Code__c" name="Matched_State_Code__c" value="" />
+<input type="hidden" id="Matched_Country_Code__c" name="Matched_Country_Code__c" value="" />
+<input type="hidden" id="Matched_Employee_Count__c" name="Matched_Employee_Count__c" value="" />
+<input type="hidden" id="Matched_Annual_Revenue__c" name="Matched_Annual_Revenue__c" value="" />
+<input type="hidden" id="Matched_SIC__c" name="Matched_SIC__c" value="" />
+<input type="hidden" id="Matched_SIC_Name__c" name="Matched_SIC_Name__c" value="" />
+<input type="hidden" id="Matched_NAICS__c" name="Matched_NAICS__c" value="" />
+<input type="hidden" id="Matched_NAICS_Name__c" name="Matched_NAICS_Name__c" value="" />
+<input type="hidden" id="Matched_Duns_Industry__c" name="Matched_Duns_Industry__c" value="" />
+<input type="hidden" id="Matched_URL__c" name="Matched_URL__c" value="" />
+<input type="hidden" id="Matched_Location_Type__c" name="Matched_Location_Type__c" value="" />
+<input type="hidden" id="Matched_Employee_Here__c" name="Matched_Employee_Here__c" value="" />
+<input type="hidden" id="Matched_Subsidiary__c" name="Matched_Subsidiary__c" value="" />
+<input type="hidden" id="Matched_Company_XID__c" name="Matched_Company_XID__c" value="" />
+<input type="hidden" id="HQ_Company__c" name="HQ_Company__c" value="" />
+<input type="hidden" id="HQ_Address1__c" name="HQ_Address1__c" value="" />
+<input type="hidden" id="HQ_Address2__c" name="HQ_Address2__c" value="" />
+<input type="hidden" id="HQ_City__c" name="HQ_City__c" value="" />
+<input type="hidden" id="HQ_State__c" name="HQ_State__c" value="" />
+<input type="hidden" id="HQ_Zip__c" name="HQ_Zip__c" value="" />
+<input type="hidden" id="HQ_Country__c" name="HQ_Country__c" value="" />
+<input type="hidden" id="HQ_Phone__c" name="HQ_Phone__c" value="" />
+<input type="hidden" id="HQ_Trade_Name__c" name="HQ_Trade_Name__c" value="" />
+<input type="hidden" id="HQ_State_Code__c" name="HQ_State_Code__c" value="" />
+<input type="hidden" id="HQ_Country_Code__c" name="HQ_Country_Code__c" value="" />
+<input type="hidden" id="HQ_Employee_Count__c" name="HQ_Employee_Count__c" value="" />
+<input type="hidden" id="HQ_Annual_Revenue__c" name="HQ_Annual_Revenue__c" value="" />
+<input type="hidden" id="HQ_SIC_Field__c" name="HQ_SIC_Field__c" value="" />
+<input type="hidden" id="HQ_SIC_Name__c" name="HQ_SIC_Name__c" value="" />
+<input type="hidden" id="HQ_NAICS__c" name="HQ_NAICS__c" value="" />
+<input type="hidden" id="HQ_NAICS_Name__c" name="HQ_NAICS_Name__c" value="" />
+<input type="hidden" id="HQ_URL__c" name="HQ_URL__c" value="" />
+<input type="hidden" id="HQ_Location_Type__c" name="HQ_Location_Type__c" value="" />
+<input type="hidden" id="HQ_Employee_Here__c" name="HQ_Employee_Here__c" value="" />
+<input type="hidden" id="HQ_Subsidiary__c" name="HQ_Subsidiary__c" value="" />
+<input type="hidden" id="HQ_Company_XID__c" name="HQ_Company_XID__c" value="" />
+<input type="hidden" id="DHQ_Company__c" name="DHQ_Company__c" value="" />
+<input type="hidden" id="DHQ_Address1__c" name="DHQ_Address1__c" value="" />
+<input type="hidden" id="DHQ_Address2__c" name="DHQ_Address2__c" value="" />
+<input type="hidden" id="DHQ_City__c" name="DHQ_City__c" value="" />
+<input type="hidden" id="DHQ_State__c" name="DHQ_State__c" value="" />
+<input type="hidden" id="DHQ_Zip__c" name="DHQ_Zip__c" value="" />
+<input type="hidden" id="DHQ_Country__c" name="DHQ_Country__c" value="" />
+<input type="hidden" id="DHQ_Phone__c" name="DHQ_Phone__c" value="" />
+<input type="hidden" id="DHQ_Trade_Name__c" name="DHQ_Trade_Name__c" value="" />
+<input type="hidden" id="DHQ_State_Code__c" name="DHQ_State_Code__c" value="" />
+<input type="hidden" id="DHQ_Country_Code__c" name="DHQ_Country_Code__c" value="" />
+<input type="hidden" id="DHQ_Employee_Count__c" name="DHQ_Employee_Count__c" value="" />
+<input type="hidden" id="DHQ_Annual_Revenue__c" name="DHQ_Annual_Revenue__c" value="" />
+<input type="hidden" id="DHQ_SIC__c" name="DHQ_SIC__c" value="" />
+<input type="hidden" id="DHQ_SIC_Name__c" name="DHQ_SIC_Name__c" value="" />
+<input type="hidden" id="DHQ_NAICS__c" name="DHQ_NAICS__c" value="" />
+<input type="hidden" id="DHQ_NAICS_Name__c" name="DHQ_NAICS_Name__c" value="" />
+<input type="hidden" id="DHQ_URL__c" name="DHQ_URL__c" value="" />
+<input type="hidden" id="DHQ_Location_Type__c" name="DHQ_Location_Type__c" value="" />
+<input type="hidden" id="DHQ_Employee_Here__c" name="DHQ_Employee_Here__c" value="" />
+<input type="hidden" id="DHQ_Subsidiary__c" name="DHQ_Subsidiary__c" value="" />
+<input type="hidden" id="DHQ_Company_XID__c" name="DHQ_Company_XID__c" value="" />
+<input type="hidden" id="GHQ_Company__c" name="GHQ_Company__c" value="" />
+<input type="hidden" id="GHQ_Address1__c" name="GHQ_Address1__c" value="" />
+<input type="hidden" id="GHQ_Address2__c" name="GHQ_Address2__c" value="" />
+<input type="hidden" id="GHQ_City__c" name="GHQ_City__c" value="" />
+<input type="hidden" id="GHQ_State__c" name="GHQ_State__c" value="" />
+<input type="hidden" id="GHQ_Zip__c" name="GHQ_Zip__c" value="" />
+<input type="hidden" id="GHQ_Country__c" name="GHQ_Country__c" value="" />
+<input type="hidden" id="GHQ_Phone__c" name="GHQ_Phone__c" value="" />
+<input type="hidden" id="GHQ_Trade_Name__c" name="GHQ_Trade_Name__c" value="" />
+<input type="hidden" id="GHQ_State_Code__c" name="GHQ_State_Code__c" value="" />
+<input type="hidden" id="GHQ_Country_Code__c" name="GHQ_Country_Code__c" value="" />
+<input type="hidden" id="GHQ_Employee_Count__c" name="GHQ_Employee_Count__c" value="" />
+<input type="hidden" id="GHQ_Annual_Revenue__c" name="GHQ_Annual_Revenue__c" value="" />
+<input type="hidden" id="GHQ_SIC__c" name="GHQ_SIC__c" value="" />
+<input type="hidden" id="GHQ_SIC_Name__c" name="GHQ_SIC_Name__c" value="" />
+<input type="hidden" id="GHQ_NAICS__c" name="GHQ_NAICS__c" value="" />
+<input type="hidden" id="GHQ_NAICS_Name__c" name="GHQ_NAICS_Name__c" value="" />
+<input type="hidden" id="GHQ_Duns_Industry__c" name="GHQ_Duns_Industry__c" value="" />
+<input type="hidden" id="GHQ_URL__c" name="GHQ_URL__c" value="" />
+<input type="hidden" id="GHQ_Location_Type__c" name="GHQ_Location_Type__c" value="" />
+<input type="hidden" id="GHQ_Employee_Here__c" name="GHQ_Employee_Here__c" value="" />
+<input type="hidden" id="GHQ_Subsidiary__c" name="GHQ_Subsidiary__c" value="" />
+<input type="hidden" id="GHQ_Company_XID__c" name="GHQ_Company_XID__c" value="" />
+<input type="hidden" id="my_geoIP_cityID__c" name="my_geoIP_cityID__c" value="" />
+<input type="hidden" id="my_geoIP_stateID__c" name="my_geoIP_stateID__c" value="" />
+<input type="hidden" id="my_geoIP_countryID__c" name="my_geoIP_countryID__c" value="" />
+<input type="hidden" id="inferredIndustry" name="inferredIndustry" value="" />
+<input type="hidden" id="inferredPublic" name="inferredPublic" value="" />
+<input type="hidden" id="inferredRevenue" name="inferredRevenue" value="" />
+<input type="hidden" id="inferredEmployees" name="inferredEmployees" value="" />
+<input type="hidden" id="confidenceDescription" name="confidenceDescription" value="" />
+<!-- end SmartForms fields -->
 
-                    <input id="MTC_KEY" type="hidden" value="EF30EA63-C343-4934-A65D-B00368852CB1" name="MTC_KEY" />
-                    <input id="MTC_ID" type="hidden" value="6938" name="MTC_ID" />
-                    <input id="MTC_GROUP" type="hidden" value="409" name="MTC_GROUP" />
-                    <input id="Redirect" type="hidden" value="<?php echo IM3_ROOT_URI; ?>?5/" name="Redirect" />
-                    <input id="MTC_SERVER" type="hidden" value="stats.manticoretechnology.com" name="MTC_SERVER" />
-                    <input id="ProspectPageID" type="hidden" value="28006" name="ProspectPageID" />
-                    <input id="SendToCRM" type="hidden" value="true" name="SendToCRM" />
-                    <input id="Tactic__c" name="Tactic__c" type="hidden" value="Web" />
-                    <input id="Tactic_Code__c" name="Tactic_Code__c" type="hidden" value="328OT00100" />
-                    <input id="Market__c" name="Market__c" type="hidden" value="PD" />
-                    <input id="Product__c" name="Product__c" type="hidden" value="" />
-                    <input id="Asset_Score__c" name="Asset_Score__c" type="hidden" value="10" />
-                    <input id="Source_Campaign__c" type="hidden" name="Source_Campaign__c" value="InnovationMgmtMaturityModel_OT_PD_Q4_2013_Global" />
-                    <input id="Activity_Type__c" type="hidden" name="Activity_Type__c" value="Online Tool" />
-                    <input id="RC_Collateral_Request__c" type="hidden" name="RC_Collateral_Request__c" value="IMMM_Widget" />
-
-                    <!-- begin SmartForms fields -->
-                    <input type="hidden" name="Confidence_Level__c" id="Confidence_Level__c" value="" />
-                    <input type="hidden" name="Matched_Company_Name__c"      id="Matched_Company_Name__c" value="" />
-                    <input type="hidden" name="Matched_Address1__c"     id="Matched_Address1__c" value="" />
-                    <input type="hidden" name="Matched_Address2__c"     id="Matched_Address2__c" value="" />
-                    <input type="hidden" name="Matched_City__c"      id="Matched_City__c" value="" />
-                    <input type="hidden" name="Matched_State__c"        id="Matched_State__c" value="" />
-                    <input type="hidden" name="Matched_Zip__c"       id="Matched_Zip__c" value="" />
-                    <input type="hidden" name="Matched_Country__c"       id="Matched_Country__c" value="" />
-                    <input type="hidden" name="Matched_Phone__c"     id="Matched_Phone__c" value="" />
-                    <input type="hidden" name="Matched_Trade_Name__c"     id="Matched_Trade_Name__c" value="" />
-                    <input type="hidden" name="Matched_State_Code__c"      id="Matched_State_Code__c" value="" />
-                    <input type="hidden" name="Matched_Country_Code__c"     id="Matched_Country_Code__c" value="" />
-                    <input type="hidden" name="Matched_Employee_Count__c"       id="Matched_Employee_Count__c" value="" />
-                    <input type="hidden" name="Matched_Annual_Revenue__c"       id="Matched_Annual_Revenue__c" value="" />
-                    <input type="hidden" name="Matched_SIC__c"       id="Matched_SIC__c" value="" />
-                    <input type="hidden" name="Matched_SIC_Name__c"   id="Matched_SIC_Name__c" value="" />
-                    <input type="hidden" name="Matched_NAICS__c"     id="Matched_NAICS__c" value="" />
-                    <input type="hidden" name="Matched_NAICS_Name__c" id="Matched_NAICS_Name__c" value="" />
-                    <input type="hidden" name="Matched_URL__c"       id="Matched_URL__c" value="" />
-                    <input type="hidden" name="Matched_Location_Type__c"       id="Matched_Location_Type__c" value="" />
-                    <input type="hidden" name="HQ_Company__c"      id="HQ_Company__c" value="" />
-                    <input type="hidden" name="HQ_Address1__c"     id="HQ_Address1__c" value="" />
-                    <input type="hidden" name="HQ_Address2__c"     id="HQ_Address2__c" value="" />
-                    <input type="hidden" name="HQ_City__c"      id="HQ_City__c" value="" />
-                    <input type="hidden" name="HQ_State__c"        id="HQ_State__c" value="" />
-                    <input type="hidden" name="HQ_Zip__c"       id="HQ_Zip__c" value="" />
-                    <input type="hidden" name="HQ_Country__c"       id="HQ_Country__c" value="" />
-                    <input type="hidden" name="HQ_Phone__c"     id="HQ_Phone__c" value="" />
-                    <input type="hidden" name="HQ_Trade_Name__c"     id="HQ_Trade_Name__c" value="" />
-                    <input type="hidden" name="HQ_State_Code__c"      id="HQ_State_Code__c" value="" />
-                    <input type="hidden" name="HQ_Country_Code__c"     id="HQ_Country_Code__c" value="" />
-                    <input type="hidden" name="HQ_Employee_Count__c"       id="HQ_Employee_Count__c" value="" />
-                    <input type="hidden" name="HQ_Annual_Revenue__c"       id="HQ_Annual_Revenue__c" value="" />
-                    <input type="hidden" name="HQ_SIC_Field__c"       id="HQ_SIC_Field__c" value="" />
-                    <input type="hidden" name="HQ_SIC_Name__c"   id="HQ_SIC_Name__c" value="" />
-                    <input type="hidden" name="HQ_NAICS__c"     id="HQ_NAICS__c" value="" />
-                    <input type="hidden" name="HQ_NAICS_Name__c" id="HQ_NAICS_Name__c" value="" />
-                    <input type="hidden" name="HQ_URL__c"       id="HQ_URL__c" value="" />
-                    <input type="hidden" name="HQ_Location_Type__c"       id="HQ_Location_Type__c" value="" />
-                    <input type="hidden" name="DHQ_Company__c"      id="DHQ_Company__c" value="" />
-                    <input type="hidden" name="DHQ_Address1__c"     id="DHQ_Address1__c" value="" />
-                    <input type="hidden" name="DHQ_Address2__c"     id="DHQ_Address2__c" value="" />
-                    <input type="hidden" name="DHQ_City__c"      id="DHQ_City__c" value="" />
-                    <input type="hidden" name="DHQ_State__c"        id="DHQ_State__c" value="" />
-                    <input type="hidden" name="DHQ_Zip__c"       id="DHQ_Zip__c" value="" />
-                    <input type="hidden" name="DHQ_Country__c"       id="DHQ_Country__c" value="" />
-                    <input type="hidden" name="DHQ_Phone__c"     id="DHQ_Phone__c" value="" />
-                    <input type="hidden" name="DHQ_Trade_Name__c"     id="DHQ_Trade_Name__c" value="" />
-                    <input type="hidden" name="DHQ_State_Code__c"      id="DHQ_State_Code__c" value="" />
-                    <input type="hidden" name="DHQ_Country_Code__c"     id="DHQ_Country_Code__c" value="" />
-                    <input type="hidden" name="DHQ_Employee_Count__c"       id="DHQ_Employee_Count__c" value="" />
-                    <input type="hidden" name="DHQ_Annual_Revenue__c"       id="DHQ_Annual_Revenue__c" value="" />
-                    <input type="hidden" name="DHQ_SIC__c"       id="DHQ_SIC__c" value="" />
-                    <input type="hidden" name="DHQ_SIC_Name__c"   id="DHQ_SIC_Name__c" value="" />
-                    <input type="hidden" name="DHQ_NAICS__c"     id="DHQ_NAICS__c" value="" />
-                    <input type="hidden" name="DHQ_NAICS_Name__c" id="DHQ_NAICS_Name__c" value="" />
-                    <input type="hidden" name="DHQ_URL__c"       id="DHQ_URL__c" value="" />
-                    <input type="hidden" name="DHQ_Location_Type__c"       id="DHQ_Location_Type__c" value="" />
-                    <input type="hidden" name="GHQ_Company__c"      id="GHQ_Company__c" value="" />
-                    <input type="hidden" name="GHQ_Address1__c"     id="GHQ_Address1__c" value="" />
-                    <input type="hidden" name="GHQ_Address2__c"     id="GHQ_Address2__c" value="" />
-                    <input type="hidden" name="GHQ_City__c"      id="GHQ_City__c" value="" />
-                    <input type="hidden" name="GHQ_State__c"        id="GHQ_State__c" value="" />
-                    <input type="hidden" name="GHQ_Zip__c"       id="GHQ_Zip__c" value="" />
-                    <input type="hidden" name="GHQ_Country__c"       id="GHQ_Country__c" value="" />
-                    <input type="hidden" name="GHQ_Phone__c"     id="GHQ_Phone__c" value="" />
-                    <input type="hidden" name="GHQ_Trade_Name__c"     id="GHQ_Trade_Name__c" value="" />
-                    <input type="hidden" name="GHQ_State_Code__c"      id="GHQ_State_Code__c" value="" />
-                    <input type="hidden" name="GHQ_Country_Code__c"     id="GHQ_Country_Code__c" value="" />
-                    <input type="hidden" name="GHQ_Employee_Count__c"       id="GHQ_Employee_Count__c" value="" />
-                    <input type="hidden" name="GHQ_Annual_Revenue__c"       id="GHQ_Annual_Revenue__c" value="" />
-                    <input type="hidden" name="GHQ_SIC__c"       id="GHQ_SIC__c" value="" />
-                    <input type="hidden" name="GHQ_SIC_Name__c"   id="GHQ_SIC_Name__c" value="" />
-                    <input type="hidden" name="GHQ_NAICS__c"     id="GHQ_NAICS__c" value="" />
-                    <input type="hidden" name="GHQ_NAICS_Name__c" id="GHQ_NAICS_Name__c" value="" />
-                    <input type="hidden" name="GHQ_URL__c"       id="GHQ_URL__c" value="" />
-                    <input type="hidden" name="GHQ_Location_Type__c"       id="GHQ_Location_Type__c" value="" />
-                    <input type="hidden" name="Matched_Company_XID__c" id="Matched_Company_XID__c" value="" />
-                    <input type="hidden" name="Matched_Employee_Here__c" id="Matched_Employee_Here__c" value="" />
-                    <input type="hidden" name="Matched_Subsidiary__c" id="Matched_Subsidiary__c" value="" />
-                    <input type="hidden" name="HQ_Company_XID__c" id="HQ_Company_XID__c" value="" />
-                    <input type="hidden" name="HQ_Employee_Here__c" id="HQ_Employee_Here__c" value="" />
-                    <input type="hidden" name="HQ_Subsidiary__c" id="HQ_Subsidiary__c" value="" />
-                    <input type="hidden" name="DHQ_Company_XID__c" id="DHQ_Company_XID__c" value="" />
-                    <input type="hidden" name="DHQ_Employee_Here__c" id="DHQ_Employee_Here__c" value="" />
-                    <input type="hidden" name="DHQ_Subsidiary__c" id="DHQ_Subsidiary__c" value="" />
-                    <input type="hidden" name="GHQ_Company_XID__c" id="GHQ_Company_XID__c" value="" />
-                    <input type="hidden" name="GHQ_Employee_Here__c" id="GHQ_Employee_Here__c" value="" />
-                    <input type="hidden" name="GHQ_Subsidiary__c" id="GHQ_Subsidiary__c" value="" />
-                    <input type="hidden" name="GHQ_Duns_Industry__c" id="GHQ_Duns_Industry__c" value="" />
-                    <input type="hidden" name="Matched_Company_Duns_Industry__c" id="Matched_Company_Duns_Industry__c" value="" />
-                    <input type="hidden" name="my_geoIP_cityID__c" id="my_geoIP_cityID__c" value="" />
-                    <input type="hidden" name="my_geoIP_countryID__c" id="my_geoIP_countryID__c" value="" />
-                    <input type="hidden" name="my_geoIP_stateID__c" id="my_geoIP_stateID__c" value="" />
-                    <!-- end SmartForms fields -->
             <p class="help-block">Complete the form to see how you rank against over 700 product development professionals worldwide.</p>
+            
+            <div class="form-group">
+              <label for="Salutation">Salutation</label>
+                <select id="Salutation" name="Salutation" title="Select Salutation" class="form-control">
+                    <option value="">Select Salutation</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Monsieur">Monsieur</option>
+                    <option value="Madame">Madame</option>
+                    <option value="Herr">Herr</option>
+                    <option value="Herr Dr.">Herr Dr.</option>
+                    <option value="Herr Mag.">Herr Mag.</option>
+                    <option value="Herr Prof.">Herr Prof.</option>
+                    <option value="Herr Prof. Dr.">Herr Prof. Dr.</option>
+                    <option value="Frau">Frau</option>
+                    <option value="Frau Dr.">Frau Dr.</option>
+                    <option value="Frau Mag.">Frau Mag.</option>
+                    <option value="Frau Prof.">Frau Prof.</option>
+                    <option value="Frau Prof. Dr.">Frau Prof. Dr.</option>
+                    <option value="Dhr">Dhr</option>
+                    <option value="Mevr">Mevr</option>
+                    <option value="Sig.">Sig.</option>
+                    <option value="Sig.ra">Sig.ra</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Doctora">Doctora</option>
+                    <option value="Dottor">Dottor</option>
+                    <option value="Dottoressa">Dottoressa</option>
+                    <option value="Señor">Señor</option>
+                    <option value="Señora">Señora</option>
+                    <option value="Señorita">Señorita</option>
+                </select>
+            </div>
+            
             <div class="row">
             <div class="form-group col-sm-6">
               <label for="FirstName">First Name</label>
@@ -132,8 +159,8 @@
             </div>
 
             <div class="form-group">
-              <label for="EmailAddress">Email</label>
-              <input id="EmailAddress" name="EmailAddress" class="form-control" type="text" placeholder="Email" required="required" />
+              <label for="Email">Email</label>
+              <input id="Email" name="Email" class="form-control" type="text" placeholder="Email" required="required" />
             </div>
 
             <div class="form-group">
@@ -142,35 +169,43 @@
             </div>
 
             <div class="form-group">
-              <label for="Planview_Industry__c">Industry</label>
-              <select class="form-control" name="Planview_Industry__c" id="Planview_Industry__c" required="required">
-                <option value="">Select Your Industry</option>
-                <option value="Agriculture, Mining, and Construction">Agriculture, Mining, and Construction</option>
-                <option value="Business and Professional Services">Business and Professional Services</option>
-                <option value="Finance, Insurance, Real Estate">Finance, Insurance, Real Estate</option>
-                <option value="Healthcare">Healthcare</option>
-                <option value="Higher Education">Higher Education</option>
-                <option value="Life Sciences - Medical Devices">Life Sciences &ndash; Medical Devices</option>
-                <option value="Life Sciences - Pharmaceutical">Life Sciences &ndash; Pharmaceutical</option>
-                <option value="Manufacturing - Chemicals, Plastics, Rubber, Petroleum or Coal">Manufacturing &ndash; Chemicals, Plastics, Rubber, Petroleum or Coal</option>
-                <option value="Manufacturing - Consumer Goods">Manufacturing &ndash; Consumer Goods</option>
-                <option value="Manufacturing - Metal Products and Machinery">Manufacturing &ndash; Metal Products and Machinery</option>
-                <option value="Manufacturing - Transportation">Manufacturing &ndash; Transportation</option>
-                <option value="Manufacturing - Other">Manufacturing &ndash; Other</option>
-                <option value="Public Sector - Government and Education">Public Sector &ndash; Government and Education</option>
-                <option value="Publishing and Media">Publishing and Media</option>
-                <option value="Retail and Wholesale Trade">Retail and Wholesale Trade</option>
-                <option value="Technology - Software/Hardware">Technology &ndash; Software/Hardware</option>
-                <option value="Telecommunications">Telecommunications</option>
-                <option value="Utilities and Energy">Utilities and Energy</option>
-                <option value="Other">Other</option>
-              </select>
+              <label for="Title">Job Title</label>
+              <input id="Title" name="Title" class="form-control" type="text" placeholder="Job Title" required="required" />
             </div>
 
             <div class="form-group">
-              <label for="Region">State</label>
-              <select name="Region" id="Region" class="form-control" required="required" >
-                  <option value="">Select state/province</option>
+              <label for="Industry">Industry</label>
+                  <select id="Industry" name="Industry" class="form-control" required>
+                    <option value="">Select...</option>
+                    <option value="Business &amp; Professional Services">Business &amp; Professional Services</option>
+                    <option value="Consumer Products">Consumer Products</option>
+                    <option value="Energy &amp; Utilities">Energy &amp; Utilities</option>
+                    <option value="Financial Services (Banking)">Financial Services (Banking)</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Healthcare Payers">Healthcare Payers</option>
+                    <option value="Healthcare Providers">Healthcare Providers</option>
+                    <option value="Higher Education">Higher Education</option>
+                    <option value="Insurance">Insurance</option>
+                    <option value="Life Sciences - CRO">Life Sciences - CRO</option>
+                    <option value="Life Sciences - Medical Products">Life Sciences - Medical Products</option>
+                    <option value="Life Sciences - Pharma">Life Sciences - Pharma</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Media &amp; Publishing">Media &amp; Publishing</option>
+                    <option value="Non-Profit">Non-Profit</option>
+                    <option value="Other">Other</option>
+                    <option value="Other (Wholesale)">Other (Wholesale)</option>
+                    <option value="Public Sector">Public Sector</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Telecommunications">Telecommunications</option>
+                    <option value="Transportation">Transportation</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="State">State</label>
+              <select name="State" id="State" title="State/Province" class="form-control" required>
+                  <option value="">Select State/Province</option>
                   <optgroup label="United States">
                       <option value="AL">AL Alabama</option>
                       <option value="AK">AK Alaska</option>
@@ -245,8 +280,8 @@
 
             <div class="form-group">
                 <label for="Country">Country:</label>
-                <select name="Country" id="Country" class="form-control" required="required" >
-                    <option value="">Select country</option>
+                <select name="Country" id="Country" title="Country" class="form-control" required>
+                    <option value="">Select Country</option>
                     <option value="US">United States</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -504,6 +539,10 @@
                 </select>
             </div>
 
+            <div class="form-group">
+              <label for="Phone">Work Phone</label>
+              <input id="Phone" name="Phone" class="form-control" type="text" placeholder="Work Phone" required="required" />
+            </div>
 
             <input class="submit-button btn btn-info btn-block btn-lg" id="submit-button" type="submit" value="Go Now!" />
-            </fieldset>
+          </fieldset>

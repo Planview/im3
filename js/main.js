@@ -457,7 +457,6 @@ theIM3WebApp = {
             returnUrlString += encodeURIComponent(companyValue) + '/';
             this.dataStore.company = companyValue;
         }
-        $('#Redirect').val(returnUrlString);
         $('#permalink').val(returnUrlString);
 
         // SmartForms Specific Code
