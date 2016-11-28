@@ -4,16 +4,8 @@
 # TEAM
 
     Steve Crockett -- Developer
-    Scott Ebner -- Developer
-    Barron Fujimoto -- Designer
 
     Ryan Doherty
-    Marianne Gorecki
-    Allison Smith
-    Jennifer Witten
-
-    Christa Tuttle
-    Carrie Nauyalis
     Planview Marketing Team
 
 # THANKS

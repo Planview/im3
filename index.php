@@ -6,7 +6,8 @@
 */
 
 /** This is the constant defining the application root*/
-define('IM3_ROOT_DIR', __DIR__ . '\\');
+//define('IM3_ROOT_DIR', __DIR__ . '\\');
+define('IM3_ROOT_DIR', __DIR__ . '/');
 
 function whatsTheRootUri ()
 {
@@ -26,8 +27,7 @@ function whatsTheRootUri ()
 	return $theUri;
 }
 
-define('IM3_ROOT_URI', whatsTheRootUri());
+//define('IM3_ROOT_URI', whatsTheRootUri());
+define('IM3_ROOT_URI', '/im3/');
 
 include(IM3_ROOT_DIR . 'inc/form.php');
-
-
