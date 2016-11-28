@@ -37,12 +37,21 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 <script type="text/javascript">var sfjq$ = jQuery.noConflict(true); var sf$, sfcc$;</script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script language="javascript" type="text/javascript" src="//d12ulf131zb0yj.cloudfront.net/SmartForms3-0/SmartForms.js"></script>
-<script language="javascript" type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/smartforms-config.js"></script>
+<script type="text/javascript" src="//d12ulf131zb0yj.cloudfront.net/SmartForms3-0/SmartForms.js"></script>
+<script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/smartforms-config.js"></script>
 <!-- SmartForms Config END -->
 
     </head>
     <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJRXS3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJRXS3');</script>
+<!-- End Google Tag Manager -->
         <!--[if lt IE 8]>
             <div class="alert alert-danger alert-dismissable container">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
