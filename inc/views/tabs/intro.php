@@ -7,7 +7,7 @@
             
             <div class="row">
               <div class="col-sm-12">
-                <p>The <a href="https://www.planview.com/resources/planview-innovation-management-maturity-model/" rel="external" title="Innovation Management Maturity Model Snapshot">Innovation Management Maturity Model&trade;</a> is a framework for assessing a company&rsquo;s innovation program encompassing the people, processes and tools needed to speed time to market.</p>
+                <p>The <a href="<?php echo IM3_ROOT_URI; ?>docs/planview-innovation-management-maturity-model.pdf" target="_blank" title="Innovation Management Maturity Model Snapshot">Innovation Management Maturity Model&trade;</a> is a framework for assessing a company&rsquo;s innovation program encompassing the people, processes and tools needed to speed time to market.</p>
                 <p>See how you rank against over 700 product development professionals across the globe who evaluated their innovation management maturity using this model in the <i>Fourth Product Portfolio Management Benchmark Study</i> (conducted by Appleseed Partners and Open Sky Research and commissioned by Planview).</p>
                 <section class="well container" style="margin-top: 25px;">
                   <div class="row intro-ctas"> 
