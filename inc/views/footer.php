@@ -1,6 +1,6 @@
 
           <footer>
-            <p>&copy; <?php echo date('Y'); ?> Planview, Inc., All Rights Reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> <a href="http://www.planview.com/" target="_blank">Planview, Inc.</a>, All Rights Reserved.</p>
           </footer>
         </div> <!-- /container -->
 
