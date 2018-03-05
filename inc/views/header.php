@@ -27,22 +27,14 @@
         <link rel="stylesheet" href="<?php echo IM3_ROOT_URI; ?>css/main.css" />
 
         <script src="<?php echo IM3_ROOT_URI; ?>js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script type="text/javascript">
+        <script>
             // For IE10 Styles
             var b = document.documentElement;
             b.setAttribute('data-useragent',  navigator.userAgent);
             b.setAttribute('data-platform', navigator.platform );
         </script>
-<!-- SmartForms Config BEGIN -->
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-<script type="text/javascript">var sfjq$ = jQuery.noConflict(true); var sf$, sfcc$;</script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script type="text/javascript" src="//d12ulf131zb0yj.cloudfront.net/SmartForms3-0/SmartForms.js"></script>
-<script type="text/javascript" src="<?php echo IM3_ROOT_URI; ?>js/smartforms-config.js"></script>
-<!-- SmartForms Config END -->
-
     </head>
-    <body>
+    <body class="main">
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJRXS3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

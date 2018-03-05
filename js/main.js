@@ -152,7 +152,6 @@ theIM3WebApp = {
         this.buildTheTabs();
         this.checkTheURL();
         this.addTheSliders();
-        this.smartFormsFix();
 
         $('.tab-nav').on('click', navListener);
         $('#' + this.options.tabContainer).on('submit', formListener);
@@ -255,6 +254,11 @@ theIM3WebApp = {
                 $('#permalink').val(returnUrlString);
                 this.barChartRender('desired-survey', 'industry-desired');
                 $('.company-name').text(this.dataStore.company);
+            }
+						
+						// hide first tab
+						if (theURIData[0] !== "0") {
+                this.hideTab(0);
             }
         }
 
@@ -443,7 +447,7 @@ theIM3WebApp = {
     formListener: function (event) {
         'use strict';
         var returnUrlString, companyValue;
-        event.preventDefault();
+        event.preventDefault();     
 
         companyValue = $('#Company').val();
 
@@ -458,19 +462,6 @@ theIM3WebApp = {
             this.dataStore.company = companyValue;
         }
         $('#permalink').val(returnUrlString);
-
-        // SmartForms Specific Code
-        // Check to see if SmartFroms is enabled
-        if (typeof sf$ === "object" && (typeof sf$.forceSelection === "function" && sfcc$.doAppend)) {
-            sfcc$.doAppend = false;
-            sf$.forceSelection();
-            return false;
-        }
-
-        this.ajaxCall();
-        return true;
-        // End SmartForms code
-
     },
     navListener: function (event) {
         'use strict';
@@ -658,21 +649,6 @@ theIM3WebApp = {
             }
         }
     },
-    smartFormsFix: function () {
-        'use strict';
-        var context = this;
-
-        //noinspection JSUndeclaredVariable
-        sfcc$ = {};
-        sfcc$.doAppend = true;
-
-        sf$.doSmartFormSubmit = function () {
-            sfjq$("#RFLoadingFrame").remove();
-            sfjq$("#RFBlockFrame").remove();
-            document.body.style.cursor = "auto";
-            context.ajaxCall();
-        };
-    },
     ajaxCall: function () {
         'use strict';
         var form, context, message, companyValue;
@@ -711,7 +687,7 @@ theIM3WebApp = {
                 message.html('<strong>Uh oh!</strong>'
                     + '<br/>We encountered an error submitting your request.');
                 message.prepend('<button type="button" class="close" data-dismiss="alert"'
-                    + ' aria-hidden="true">&times;</button>');
+                    + ' aria-hidden="true">×</button>');
             }
         });
     },

@@ -18,7 +18,7 @@
                         </a>
                       </div>
                       <div class="col-sm-6">
-                        <a class="btn btn-lg btn-info btn-block col-sm-6 clearfix cf" href="http://go.planview.com/innovation-management-maturity-model.html" target="_blank"> 
+                        <a class="btn btn-lg btn-info btn-block col-sm-6 clearfix cf" href="http://info.planview.com/framework-for-assessing-innovation-_whitepaper_pi_en_reg.html" target="_blank"> 
                                 <div class="col-xs-9" style="white-space: normal;">
                                     <h3>Download the White Paper <small style="display: block; color: white; line-height: 20px; margin-top: 10px;"><i>A New Framework for Assessing Your Innovation Program: Introducing the Innovation Management Maturity Model&trade; by Planview</i></small></h3>
                                 </div>

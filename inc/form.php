@@ -13,7 +13,8 @@ include(IM3_ROOT_DIR . "inc/views/header.php");
 
       <!-- Example row of columns -->
       <div class="row js-webapp">
-      	<form id="WEBForm" name="WEBForm" class="col-md-12" action="<?php echo IM3_ROOT_URI; ?>inc/form-processing-im3.php" method="post">
+        <div id="WEBForm" class="col-md-12">
+          
           <section id="intro" class="tab" data-tab-number="0" data-tab-enabled="true">
             <?php include(IM3_ROOT_DIR . 'inc/views/tabs/intro.php'); ?>
           </section>
@@ -34,7 +35,6 @@ include(IM3_ROOT_DIR . "inc/views/header.php");
             <?php include(IM3_ROOT_DIR . 'inc/views/tabs/overall.php'); ?>
           </fieldset>
 
-
           <fieldset id="contact" class="tab row" data-tab-number="5" data-tab-enabled="false" style="display: none;">
             <?php include(IM3_ROOT_DIR . 'inc/views/tabs/contact.php'); ?>
           </fieldset>
@@ -47,7 +47,10 @@ include(IM3_ROOT_DIR . "inc/views/header.php");
             <a href="" class="tab-nav prev btn btn-default">&laquo;&nbsp;Previous</a>
             <a href="" class="tab-nav next btn btn-default">Next&nbsp;&raquo;</a>
           </nav>
-      	</form>
+
+        </div>
+        
+        
       </div>
       <div class="row noscript-message">
           <div class="col-md-12">
